@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="meanApp">
+<html lang="en">
+
+<!--This is the published html file, with links corrected to perform correctly on the server-->
 
 <!-- HEAD SECTION -->
 <head>
@@ -21,14 +23,14 @@
 
     <!--BOOTSTRAP MAIN STYLES -->
 
-    <link href="../public/css/bootstrap.css" rel="stylesheet" />
+    <link href="/css/bootstrap.css" rel="stylesheet" />
 
     <!--FONT MAIN STYLE -->
 
-    <link href="../public/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="/css/font-awesome.min.css" rel="stylesheet" />
 
     <!--CUSTOM STYLE -->
-    <link href="../public/css/style.css" rel="stylesheet" />
+    <link href="/css/style.css" rel="stylesheet" />
 
 
 
@@ -43,10 +45,7 @@
 <!--END HEAD SECTION -->
 
 <body>
-    <!-- ANGULAR ROUTING -->
-    <ng-view></ng-view>
-
-    <!-- NAV SECTION -->
+   <!-- NAV SECTION -->
     <div class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
@@ -77,7 +76,7 @@
         <div class="container">
             <div class="row centered">
                 <div class="col-md-8 col-md-offset-2">
-                    <h1><img src = "../public/img/WasatchRiver(Resized)2.png"></img>
+                    <h1><img src = "img/WasatchRiver(Resized)2.png"></img>
 
                     </h1>
                      <br /> <br /> <br />
@@ -99,15 +98,14 @@
                 <div class="col-md-8 col-md-offset-2 " data-scrollreveal="enter top and move 100px, wait 0.3s">
                     <h1></h1>
                     <h4>
-                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                         Curabitur nec nisl odio. Mauris vehicula at nunc id posuere.
+                       No matter your business or your interest, we offer a wide range of products to meet your needs and budget.
                     </h4>
                 </div>
             </div>
             <!-- ./ Main Heading-->
             <div class="row main-low-margin text-center">
                 <div class="col-md-3 " data-scrollreveal="enter left and move 100px, wait 0.4s">
-                    <img class="img-circle" src="../public/img/team/Profile%20Image.jpeg" alt="">
+                    <img class="img-circle" src="img/team/Profile%20Image.jpeg" alt="Justin Caldwell, Chief Designer">
                     <h4><strong>Justin Caldwell</strong> </h4>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -168,7 +166,7 @@
             <div class="row main-low-margin" >
                 <div class="col-md-10  col-md-offset-1 ">
                     <div class="col-md-4 col-sm-4" data-scrollreveal="enter left and move 100px, wait 0.8s">
-                    <img src="../public/img/WasatchRiver2.png" alt="River Logo">
+                    <img src="img/WasatchRiver2.png" alt="River Logo">
                 </div>
                 <div class="col-md-8 " data-scrollreveal="enter right and move 100px, wait 0.4s">
                     <h4 >  <strong class="color-red"> Sample 1 </strong></h4>
@@ -211,13 +209,13 @@
                     <p>
                         <i class="fa fa-check"></i> Responsive Design<br />
                      <i class="fa fa-check"></i> 24x7 Support <br />
-                       <i class="fa fa-check"></i> Scalable<br />
+                       <i class="fa fa-check"></i> Scalable <br />
                     </p>
-                    <a href="#" class="btn btn-danger" > See Live Demo</a>
+                    <a href="#" class="btn btn-danger" > See Live Demo </a>
                 </div>
                 <div class="col-md-4 " data-scrollreveal="enter right and move 100px, wait 0.4s">
                     
-                    <img class="img-margin-product" src="../public/img/product/prd1.png" alt="">
+                    <img class="img-margin-product" src="img/product/prd1.png" alt="">
                 </div>
                      </div>
             </div>
@@ -314,41 +312,43 @@
         </div>
        
     </div>  
-    <!--END FOOTER SECTION -->
+
+
+   <!--END FOOTER SECTION -->
 
     <!-- DEPENDENCIES -->
     <!-- Angular Core Library -->
-    <script src="./libs/angular/angular.js"></script>
+    <script src="/libs/angular/angular.js"></script>
 
     <!-- Angular Route Library -->
-    <script src="./libs/angular-route/angular-route.js"></script>
+    <script src="/libs/angular-route/angular-route.js"></script>
 
     <!-- Angular Module -->
-    <script src="./js/app.js"></script>
+    <script src="/js/app.js"></script>
 
     <!-- Angular Controller -->
-    <script src="./js/controllers/homeCtrl.js"></script>
-    <script src="./js/controllers/registerCtrl.js"></script>
-    <script src="./js/controllers/loginCtrl.js"></script>
-    <script src="./js/controllers/profileCtrl.js"></script>
+    <script src="/js/controllers/homeCtrl.js"></script>
+    <script src="/js/controllers/registerCtrl.js"></script>
+    <script src="/js/controllers/loginCtrl.js"></script>
+    <script src="/js/controllers/profileCtrl.js"></script>
 
     <!-- Angular Services -->
-    <script src="./js/services/authService.js"></script>
-    <script src="./js/services/profile.js"></script>
+    <script src="/js/services/authService.js"></script>
+    <script src="/js/services/profile.js"></script>
 
     <!-- Angular Directives -->
-    <script src="./js/directives/navigation/navigation.controller.js"></script>
-    <script src="./js/directives/navigation/navigation.directive.js"></script>
+    <script src="/js/directives/navigation/navigation.controller.js"></script>
+    <script src="/js/directives/navigation/navigation.directive.js"></script>
 
 
     <!-- CORE JQUERY LIBRARY -->
-    <script src="../public/js/jquery.js"></script>
+    <script src="/js/jquery.js"></script>
     <!-- BOOTSTRAP JS-->
-    <script src="../public/js/bootstrap.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
      <!-- SCROLL REVEAL ANIMATION LIBRARY-->
-    <script src="../public/js/scrollReveal.js"></script>
+    <script src="/js/scrollReveal.js"></script>
        <!-- JAVASCRIPT-->
-    <script src="../public/js/custom.js"></script>
+    <script src="/js/custom.js"></script>
 
 </body>
 </html>
